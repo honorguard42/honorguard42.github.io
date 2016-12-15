@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "homepage": "https://github.com/honorguard42/resume",
+  "description": "for my resume",
+  "main": "index.js",
+  "authors": [
+    "Christian Wardell"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}
