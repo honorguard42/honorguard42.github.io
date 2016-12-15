@@ -19,8 +19,8 @@ function fillCopy(){
 		{card:"bash",content:"Knows how to create a custom bash environment that improves efficiency and that looks awesome. Look at that sweet terminal!"},
 		{card:"docker",content:"Uses docker to emulate various development tools on windows as well as creating easy to distribute apps."},
 		{card:"node",content:"Engine to speed up my development and testing process. I like gulp, webpack, browser-sync, bower, and so on."},
-		{card:"less",content:"copy"},
-		{card:"sysadmin",content:"copy"}
+		{card:"less",content:"Uses less to standardize CSS files, Variables in css are super useful for development in my opinion."},
+		{card:"sysadmin",content:"Knows way around servers. Some examples are: Server maintenance, SharePoint, DNS, AD/DS, SQL, etc."}
 	]
 	for(i=0;i < copy.length; i++){
 		$('.'+copy[i].card+' .copy').each(function(index,el){
