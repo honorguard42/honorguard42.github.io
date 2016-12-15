@@ -1,7 +1,7 @@
 $(document).ready(function() {
     fillCopy();
+    zoom();
     setTimeout(fade('.title'),1);
-    $('#modal').modal('show')
 });
 
 function fade(el, i = 0) {
@@ -30,5 +30,10 @@ function fillCopy(){
 }
 
 function zoom(){
-	
+	$('.thumbnail').each(function(index,el){
+		$(this).click(function(){
+			$('.modal-content').html($($(this), 'img').html());
+			$('#modal').modal('show')
+		});
+	});
 }
