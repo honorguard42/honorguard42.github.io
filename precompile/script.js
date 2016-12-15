@@ -16,9 +16,9 @@ function fade(el, i = 0) {
 
 function fillCopy(){
 	var copy = [
-		{card:"bash",content:"copy"},
-		{card:"docker",content:"copy"},
-		{card:"node",content:"copy"},
+		{card:"bash",content:"Knows how to create a custom bash environment that improves efficiency and that looks awesome. Look at that sweet terminal!"},
+		{card:"docker",content:"Uses docker to emulate various development tools on windows as well as creating easy to distribute apps."},
+		{card:"node",content:"Engine to speed up my development and testing process. I like gulp, webpack, browser-sync, bower, and so on."},
 		{card:"less",content:"copy"},
 		{card:"sysadmin",content:"copy"}
 	]
