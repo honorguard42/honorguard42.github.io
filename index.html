@@ -19,7 +19,9 @@
     <!--The real question is, what else can I do?-->
     <div class="container">
         <h1>Christian Wardell</h1>
-        <h2>Web Developer</h2>
+        <h2 class="title">Web Developer</h2>
+        <h2 style="display:none" class="title">Designer</h2>
+        <h2 style="display:none" class="title">Programmer</h2>
         <p>Curabitur mauris lorem, ultrices eget mauris in, ultricies malesuada massa. Sed at auctor purus, convallis porttitor orci. Ut interdum porttitor iaculis. Integer tincidunt tortor vitae neque tempor, vitae dignissim velit dapibus.</p>
         <div class="panel-group visible-xs-block" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
@@ -95,5 +97,20 @@
 </div>
 </div>
 </body>
-
+<script type="text/javascript">
+	$(document).ready(function(){
+		fade('.title');
+		
+	});
+	function fade(el, i = 0){
+		$(el+':eq('+i+')').fadeIn(700).fadeOut(2000,function(){
+			if(i < $(el).length - 1){
+				fade(el,i+1);
+			}
+			else{
+				fade(el,0);
+			}
+		});
+	}
+</script>
 </html>
