@@ -1,6 +1,7 @@
 $(document).ready(function() {
     fillCopy();
     setTimeout(fade('.title'),1);
+    $('#modal').modal('show')
 });
 
 function fade(el, i = 0) {
@@ -26,4 +27,8 @@ function fillCopy(){
 			$(this).text(copy[i].content);
 		});
 	}
+}
+
+function zoom(){
+	
 }
