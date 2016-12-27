@@ -29,14 +29,6 @@
 .footer .footerCenter {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  .skills {
-    margin: 0px;
-  }
-  .footer p {
-    text-align: center!important;
-  }
-}
 .headline {
   margin-bottom: 0px;
 }
@@ -55,8 +47,84 @@
   width: 95%;
 }
 .thumbnail {
-  min-height: 362px;
+  min-height: 367px!important;
 }
 .panelHeader {
   margin-top: 0px;
+}
+.masterRow {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
+}
+.identity {
+  margin-right: 0px!important;
+  margin-left: 0px!important;
+}
+.cardContent {
+  display: none;
+}
+.masterRow div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.panel-title {
+  padding-left: 5px;
+}
+.panel-body {
+  padding-left: 5px!important;
+  padding-right: 5px!important;
+  padding-bottom: 5px!important;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .skills {
+    margin: 0px;
+  }
+  .footer p {
+    text-align: center!important;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .masterRow,
+  .footer {
+    display: none!important;
+  }
+  .card {
+    height: 100vh;
+    padding: 15px 0px;
+  }
+  .header {
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 25px;
+    padding: 0px 15px;
+    height: 100%;
+    box-shadow: 5px 5px 10px #888888;
+  }
+  .headline {
+    margin-top: 0px;
+  }
+  .cardContent {
+    bottom: 0;
+    margin-right: 15px!important;
+    margin-bottom: 10px;
+    display: block;
+    position: absolute;
+  }
+  .cardContent :nth-child(even) {
+    text-align: right;
+  }
+  .identity {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .skills {
+    display: none;
+  }
+}
+@media all and (orientation: portrait) {
+  .cardContent {
+    display: none;
+  }
 }
