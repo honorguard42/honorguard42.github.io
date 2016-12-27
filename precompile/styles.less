@@ -69,3 +69,28 @@
 .panelHeader {
     margin-top: 0px;
 }
+
+
+.masterRow {
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .masterRow, .footer {
+        display: none!important;
+    }
+    .card{
+        height:100vh;
+        padding:15px 0px;
+    }
+    .header {
+        border-style: inset;
+        border-width: 2px;
+        border-radius: 25px;
+        padding: 0px 15px;
+        height:100%;
+        bottom: 0;
+        top:0;
+    }
+}
