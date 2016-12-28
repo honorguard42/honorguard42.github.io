@@ -7,6 +7,24 @@
 }
 .carousel {
   margin-bottom: 10px;
+  max-height: 314px;
+  height: 314px;
+  position: relative;
+}
+.carousel img {
+  height: 100%;
+  width: 100%;
+  max-height: 314px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.carousel .item {
+  height: 314px;
+}
+.carousel-inner {
+  height: 314px;
 }
 .carousel-container {
   margin-top: 5px;
@@ -46,9 +64,6 @@
 .modal-lg {
   width: 95%;
 }
-.thumbnail {
-  min-height: 367px!important;
-}
 .panelHeader {
   margin-top: 0px;
 }
@@ -63,9 +78,25 @@
 .cardContent {
   display: none;
 }
-.masterRow div {
+.masterRow > div {
   padding-left: 0px;
   padding-right: 0px;
+}
+.thumbnail {
+  min-height: 450px!important;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block !important;
+}
+.thumbnail img {
+  border: 2px solid #dddddd;
+}
+.big > .thumbnail {
+  min-height: 620px!important;
+  height: 100%;
+}
+.caption {
+  height: 100%;
 }
 .panel-title {
   padding-left: 5px;
@@ -74,6 +105,15 @@
   padding-left: 5px!important;
   padding-right: 5px!important;
   padding-bottom: 5px!important;
+}
+a:hover,
+a:focus {
+  text-decoration: none!important;
+}
+.skills,
+.skills > .row {
+  margin-left: 0px!important;
+  margin-right: 0px!important;
 }
 /* Media Queries */
 @media screen and (max-width: 768px) {
